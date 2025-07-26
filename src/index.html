@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LJY-ChatGPT-4.1-nano | 智能对话</title>
+  <title>LJY-GLM-4-Flash | 智能对话</title>
 
   <!-- 关键资源：Tailwind & FontAwesome（直接加载，不延迟） -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css" media="print" onload="this.media='all'">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/python.min.js" defer></script>
-  <script src="https://unpkg.com/mammoth@1.4.21/mammoth.browser.min.js" defer></script>
   <script src="https://unpkg.com/mammoth@1.4.21/mammoth.browser.min.js" defer></script>
 
 <!-- 内联关键CSS -->
@@ -597,7 +596,7 @@
       <!-- 主标题（调暗） -->
       <h1 class="text-[clamp(2.5rem,8vw,5rem)] sm:text-[clamp(3rem,10vw,6rem)] font-extrabold mb-6 leading-tight">
         <span class="text-white neon-text-dim font-black drop-shadow-2xl">
-          LJY-ChatGPT-4.1-nano
+          LJY-GLM-4-Flash
         </span>
       </h1>
       
@@ -647,7 +646,7 @@
       </button>
       
       <p class="text-gray-300 text-xs sm:text-sm animate-slide font-medium">
-        © 2025 LJY-ChatGPT-4.1-nano | 智能对话系统
+        © 2025 LJY-GLM-4-Flash | 智能对话系统
       </p>
     </div>
   </div>
@@ -669,13 +668,13 @@
     </div>
 
     <!-- 聊天头部（固定） -->
-    <header class="glass-effect p-3 sm:p-4 flex items-center justify-between shadow-lg z-20 sticky top-0 bg-[rgba(30,31,38,0.95)] backdrop-blur-md">
+    <header class="glass-effect p-3 sm:p-4 flex items-center justify-between shadow-lg z-20 bg-[rgba(30,31,38,0.95)] backdrop-blur-md" style="position: fixed; top: 0; left: 0; right: 0; height: 64px;">
       <div class="flex items-center">
         <div class="bg-gradient-animated w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center mr-2 sm:mr-3 shadow-glow/50">
           <i class="fa fa-robot text-white text-base sm:text-xl"></i>
         </div>
         <h1 class="text-base sm:text-xl font-bold tracking-tight">
-          <span class="bg-gradient-to-r from-primary to-secondary text-gradient animate-glow-text">ChatGPT-4.1-nano</span>
+          <span class="bg-gradient-to-r from-primary to-secondary text-gradient animate-glow-text">GLM-4-Flash</span>
         </h1>
       </div>
       
@@ -693,15 +692,15 @@
     </header>
     
     <!-- 聊天内容区 -->
-    <div id="chatContainer" class="flex-1 overflow-y-auto p-3 sm:p-4 md:p-6 custom-scrollbar relative">
-      <div id="messages" class="space-y-4 sm:space-y-6 max-w-4xl mx-auto relative z-10 pb-24 sm:pb-32">
+    <div id="chatContainer" class="flex-1 overflow-y-auto p-3 sm:p-4 md:p-6 custom-scrollbar relative" style="padding-top: 80px; padding-bottom: 150px;">
+      <div id="messages" class="space-y-4 sm:space-y-6 max-w-4xl mx-auto relative z-10">
         <!-- 系统消息 -->
         <div class="flex items-start message-appear">
           <div class="bg-gradient-animated w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center mr-2 sm:mr-4 flex-shrink-0 shadow-glow/50">
             <i class="fa fa-info text-white"></i>
           </div>
           <div class="bg-dark-light rounded-xl sm:rounded-2xl p-3 sm:p-5 shadow-lg max-w-[85%] sm:max-w-[90%] border border-white/5 transition-all duration-300 hover:border-primary/20">
-            <p class="text-gray-300 text-sm sm:text-base leading-relaxed">欢迎使用ChatGPT-4.1-nano对话系统！我是您的AI助手，能够帮助您解决问题、提供信息和创意灵感。</p>
+            <p class="text-gray-300 text-sm sm:text-base leading-relaxed">欢迎使用 GLM-4-Flash 对话系统！我是您的 AI 助手，能够帮助您解决问题、提供信息和创意灵感。</p>
             <p class="text-xs text-gray-500 mt-1 sm:mt-2">系统消息 · 刚刚</p>
           </div>
         </div>
@@ -952,7 +951,7 @@
             <i class="fa fa-info text-white"></i>
           </div>
           <div class="bg-dark-light rounded-xl sm:rounded-2xl p-3 sm:p-5 shadow-lg max-w-[85%] sm:max-w-[90%] border border-white/5 transition-all duration-300 hover:border-primary/20">
-            <p class="text-gray-300 text-sm sm:text-base leading-relaxed">欢迎使用ChatGPT-4.1-nano对话系统！我是您的AI助手，能够帮助您解决问题、提供信息和创意灵感。</p>
+            <p class="text-gray-300 text-sm sm:text-base leading-relaxed">欢迎使用 GLM-4-Flash 对话系统！我是您的 AI 助手，能够帮助您解决问题、提供信息和创意灵感。</p>
             <p class="text-xs text-gray-500 mt-1 sm:mt-2">系统消息 · 刚刚</p>
           </div>
         </div>
@@ -1106,7 +1105,7 @@
               ${formatMessage(content)}
             </div>
             <p class="text-xs text-gray-500 mt-1 sm:mt-2">
-              ${isUser ? '你 · 刚刚' : 'ChatGPT-4.1-nano · 正在生成...'}
+              ${isUser ? '你 · 刚刚' : 'GLM-4-Flash · 正在生成...'}
             </p>
           </div>
         </div>
@@ -1145,7 +1144,7 @@
               <span></span>
               <span></span>
             </div>
-            <p class="text-xs text-gray-500 mt-1 sm:mt-2">ChatGPT-4.1-nano · 正在生成...</p>
+            <p class="text-xs text-gray-500 mt-1 sm:mt-2">GLM-4-Flash · 正在生成...</p>
           </div>
         </div>
       `;
@@ -1392,11 +1391,16 @@
     }
     
     // 滚动到底部
-    function scrollToBottom() {
-      requestAnimationFrame(() => {
-        chatContainer.scrollTop = chatContainer.scrollHeight;
-      });
+function scrollToBottom() {
+  requestAnimationFrame(() => {
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+    // 确保最后一条消息可见
+    const lastMessage = messages.lastElementChild;
+    if (lastMessage) {
+      lastMessage.scrollIntoView({ behavior: 'auto', block: 'end' });
     }
+  });
+}
     
     // 自动滚动到底部
     const observer = new MutationObserver((mutations) => {
@@ -1409,7 +1413,7 @@
     
     observer.observe(messages, { childList: true, subtree: true });
     
-    // 获取ChatGPT响应
+    // 获取GLM-4-Flash响应
     async function fetchChatGPTResponse(history, aiMessageId) {
       isStreaming = true;
       sendBtn.disabled = true;
@@ -1420,15 +1424,11 @@
       
       try {
         const myHeaders = new Headers();
-        myHeaders.append("Authorization", "Bearer sk-YU9AcnAcHlvidwGg0W7n4tLDtRGcHDY47nEwn3GpUHHmbAON");
+        myHeaders.append("Authorization", "Bearer e4e8b6da7f6c467ebeaffa6932de7648.YSfrQRvutMySA4yo");
         myHeaders.append("Content-Type", "application/json");
         
-        if (!myHeaders.get("Authorization")?.includes('sk-')) {
-          throw new Error("API密钥无效，请检查授权信息");
-        }
-        
         const raw = JSON.stringify({
-          "model": "gpt-4.1-nano",
+          "model": "glm-4-flash-250414",
           "messages": history,
           "stream": true,
           "max_tokens": 8080
@@ -1448,7 +1448,7 @@
         );
         
         const response = await Promise.race([
-          fetch("https://api.deerapi.com/v1/chat/completions", requestOptions),
+          fetch("https://open.bigmodel.cn/api/paas/v4/chat/completions", requestOptions),
           timeoutPromise
         ]);
         
@@ -1472,10 +1472,10 @@
         const aiMessageElement = document.getElementById(aiMessageId);
         const contentContainer = aiMessageElement.querySelector('.bg-dark-light');
         contentContainer.innerHTML = `
-          <div class="prose prose-invert max-w-none"></div>
-          <p class="text-xs text-gray-500 mt-1 sm:mt-2">ChatGPT-4.1-nano · 正在生成...</p>
+          <div class="prose prose-invert max-w-none" id="streaming-content-${aiMessageId}"></div>
+          <p class="text-xs text-gray-500 mt-1 sm:mt-2">GLM-4-Flash · 正在生成...</p>
         `;
-        const contentElement = aiMessageElement.querySelector('.prose');
+        const contentElement = document.getElementById(`streaming-content-${aiMessageId}`);
         const timestampElement = aiMessageElement.querySelector('.text-gray-500');
         
         // 流式处理循环
@@ -1502,9 +1502,9 @@
                   const now = Date.now();
                   if (now - lastRenderTime > renderInterval) {
                     contentElement.innerHTML = formatMessage(fullContent);
-                    renderCodeBlocks(aiMessageElement);
-                    lastRenderTime = now;
-                    scrollToBottom();
+              renderCodeBlocks(aiMessageElement);
+              lastRenderTime = now;
+              scrollToBottom();
                   }
                 }
               } catch (e) {
@@ -1516,13 +1516,13 @@
           if (done) {
             contentElement.innerHTML = formatMessage(fullContent);
             renderCodeBlocks(aiMessageElement);
-            renderMathInElement(aiMessageElement);
+            renderMathInElement(contentElement);
             scrollToBottom();
             break;
           }
         }
         
-        timestampElement.textContent = 'ChatGPT-4.1-nano · 刚刚';
+        timestampElement.textContent = 'GLM-4-Flash · 已完成';
         conversationHistory.push({ role: 'assistant', content: fullContent });
         
       } catch (error) {
@@ -1534,7 +1534,7 @@
             <div class="prose prose-invert max-w-none">
               <p class="error-message">${error.message}</p>
             </div>
-            <p class="text-xs text-gray-500 mt-1 sm:mt-2">ChatGPT-4.1-nano · 错误</p>
+            <p class="text-xs text-gray-500 mt-1 sm:mt-2">GLM-4-Flash · 错误</p>
           `;
         } else {
           addSystemMessage(`错误: ${error.message}`);
